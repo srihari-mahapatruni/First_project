@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocational Module Translator</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif; background-color:#f9f9f6; color:#2f3e2f;">
+
+    <!-- Header -->
+    <div style="background-color:#556b2f; padding:20px; text-align:center; color:white;">
+        <h1 style="margin:0; font-size:28px;">🌐 Vocational Training Translator</h1>
+        <p style="margin:5px 0 0; font-size:16px;">Making learning accessible in every Indian language</p>
+    </div>
+
+    <!-- Main Section -->
+    <div style="max-width:600px; margin:40px auto; background:#ffffff; padding:30px; 
+                border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+
+        <h2 style="text-align:center; margin-bottom:20px; color:#556b2f;">Upload Your File</h2>
+
+        <!-- Upload Form -->
+        <form action="/upload" method="POST" enctype="multipart/form-data" style="display:flex; flex-direction:column; gap:20px;">
+
+            <!-- File Upload -->
+            <label style="font-weight:bold;">Choose File (Text, PDF, Audio, Video):</label>
+            <input type="file" name="file" required
+                   style="padding:10px; border:1px solid #ccc; border-radius:8px;">
+
+            <!-- Language Selector -->
+            <label style="font-weight:bold;">Select Target Language:</label>
+            <select name="language" required
+                    style="padding:10px; border:1px solid #ccc; border-radius:8px;">
+                <option value="">-- Choose Language --</option>
+                <option value="hi">Hindi</option>
+                <option value="te">Telugu</option>
+                <option value="ta">Tamil</option>
+                <option value="bn">Bengali</option>
+                <option value="ml">Malayalam</option>
+                <option value="gu">Gujarati</option>
+                <option value="mr">Marathi</option>
+                <option value="pa">Punjabi</option>
+                <option value="kn">Kannada</option>
+                <option value="or">Odia</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" 
+                    style="padding:12px; border:none; border-radius:8px; 
+                           background-color:#556b2f; color:white; font-size:16px; cursor:pointer;">
+                Translate Now
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color:#556b2f; color:white; text-align:center; padding:15px; margin-top:40px;">
+        <p style="margin:0; font-size:14px;">© 2025 Vocational Translator | Powered by Python</p>
+    </div>
+
+</body>
+</html>
 
